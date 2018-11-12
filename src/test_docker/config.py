@@ -12,7 +12,7 @@ DOCKER_MODULE_LIST = [
     dict(image_name='inemo/isanlp_srl_framebank',
          test_script='run_test_srl_framebank'),
     dict(image_name='inemo/isanlp_parser_conll2008',
-         test_script='run_test_parser_conll2008')
+         test_script='run_test_parser_conll2008') #
 ]
 
 
