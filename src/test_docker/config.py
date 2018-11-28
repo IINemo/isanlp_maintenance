@@ -12,12 +12,18 @@ DOCKER_MODULE_LIST = [
     dict(image_name='inemo/isanlp_srl_framebank',
          test_script='run_test_srl_framebank'),
     dict(image_name='inemo/isanlp_parser_conll2008',
-         test_script='run_test_parser_conll2008') #
+         test_script='run_test_parser_conll2008'),
+    dict(image_name='isanlp_deep_srl',  # built from (gh) source with this name
+         test_script='run_test_deep_srl',
+         is_local=True)
 ]
 
 
 TEST_TEXT_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), 
-                              '../../data/text.txt')
+                              '../../data/text_ru.txt')
+
+TEST_EN_TEXT_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                              '../../data/text_en.txt')
 
 GITHUB_REPO = 'https://github.com/IINemo/isanlp'
 
