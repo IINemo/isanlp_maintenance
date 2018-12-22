@@ -47,8 +47,9 @@ def run_container_default(image_name, port,
 def run_test_with_image(repo_path, test_module, *args, **kwargs):
     logger.info('Running test...')
     env_vars = ' '.join(['{}={}'.format(k, v) for k,v in kwargs.items()])
-    run('PYTHONPATH={} TEST_PATH={} {} {} {}'.format(repo_path, 
-                                                     cfg.TEST_TEXT_PATH, 
+    run('PYTHONPATH={} TEST_PATH={} TEST_EN_PATH={} {} {} {}'.format(repo_path,
+                                                     cfg.TEST_TEXT_PATH,
+                                                     cfg.TEST_EN_TEXT_PATH,
                                                      env_vars,
                                                      cfg.PYTHON_BIN, 
                                                      test_module))
