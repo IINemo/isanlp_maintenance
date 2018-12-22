@@ -22,7 +22,7 @@ ppl = PipelineCommon([(ProcessorRemote(host=host,
                         'postag': 'postag'}),
                       (ProcessorRemote(host=host,
                                        port=port_srl,
-                                       pipeline_name='main'),
+                                       pipeline_name='default'),
                        ['tokens', 'sentences'],
                        {'srl': 'srl'})
                       ])

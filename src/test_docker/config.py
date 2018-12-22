@@ -13,7 +13,7 @@ DOCKER_MODULE_LIST = [
          test_script='run_test_srl_framebank'),
     dict(image_name='inemo/isanlp_parser_conll2008',
          test_script='run_test_parser_conll2008'),
-    dict(image_name='isanlp_deep_srl',  # built from (gh) source with this name
+    dict(image_name='inemo/isanlp_deep_srl',  # built from (gh) source with this name
          test_script='run_test_deep_srl',
          is_local=True)
 ]
